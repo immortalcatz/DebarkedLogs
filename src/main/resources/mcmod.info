@@ -1,0 +1,16 @@
+[
+{
+  "modid": "debarkedlogs",
+  "name": "Debarked Logs",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["BeetoGuy"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

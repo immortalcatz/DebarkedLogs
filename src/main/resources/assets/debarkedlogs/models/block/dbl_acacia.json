@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures" : {
+    "end": "debarkedlogs:blocks/wood_top_acacia",
+    "side": "debarkedlogs:blocks/wood_side_acacia"
+  }
+}

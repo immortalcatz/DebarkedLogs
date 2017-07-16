@@ -1,0 +1,57 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "debarkedlogs:blocks/wood_side_oak"
+    },
+    "model": "block/cube_column",
+    "uvlock": false
+  },
+  "variants": {
+    "normal" : [{}],
+    "inventory": [
+      {
+        "transform": "forge:default-block"
+      }
+    ],
+    "variant": {
+      "0": {
+        "model": "debarkedlogs:dbl_oak",
+        "textures": {
+          "all": "debarkedlogs:blocks/wood_side_oak"
+        }
+      },
+      "1": {
+        "model": "debarkedlogs:dbl_spruce",
+        "textures": {
+          "all": "debarkedlogs:blocks/wood_side_spruce"
+        }
+      },
+      "2": {
+        "model": "debarkedlogs:dbl_birch",
+        "textures": {
+          "all": "debarkedlogs:blocks/wood_side_birch"
+        }
+      },
+      "3": {
+        "model": "debarkedlogs:dbl_jungle",
+        "textures": {
+          "all": "debarkedlogs:blocks/wood_side_jungle"
+        }
+      }
+    },
+    "axis": {
+      "x": {
+        "x": 90,
+        "y": 90
+      },
+      "y": {},
+      "z": {
+        "x": 90
+      },
+      "none": {
+        "model": "cube_all"
+      }
+    }
+  }
+}
