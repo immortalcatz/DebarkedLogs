@@ -26,7 +26,9 @@
         "textures": {
           "all": "debarkedlogs:blocks/wood_side_dark_oak"
         }
-      }
+      },
+      "2": {},
+      "3": {}
     },
     "axis": {
       "x": {

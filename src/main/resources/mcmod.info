@@ -2,7 +2,7 @@
 {
   "modid": "debarkedlogs",
   "name": "Debarked Logs",
-  "description": "Example placeholder mod.",
+  "description": "Aesthetic blocks for lumberjacks.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

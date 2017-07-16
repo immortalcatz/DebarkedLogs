@@ -5,6 +5,7 @@ import debarking.proxy.CommonProxy;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -19,6 +20,11 @@ public class Debarking {
     public void preInit(FMLPreInitializationEvent evt) {
         DebarkRegistry.preInit();
         MinecraftForge.EVENT_BUS.register(new DebarkingEvent());
+    }
+
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent evt) {
+        DebarkRegistry.init();
     }
 
     @Mod.EventHandler

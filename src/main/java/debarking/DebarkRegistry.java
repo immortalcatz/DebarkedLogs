@@ -39,6 +39,10 @@ public class DebarkRegistry {
         ModCompat.preInit();
     }
 
+    public static void init() {
+        ModCompat.init();
+    }
+
     public static void postInit() {
         ModCompat.postInit();
     }
