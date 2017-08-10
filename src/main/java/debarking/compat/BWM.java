@@ -34,7 +34,7 @@ public class BWM {
     private static void addChopping(BWOreDictionary.Wood wood, String woodType) {
         System.out.println("Adding BWM recipes for plank type: " + woodType);
         BWOreDictionary.woods.add(wood);
-        SawManager.INSTANCE.addRecipe(wood.getLog(1), wood.getPlank(isHCLumber ? 4 : 5), wood.getSawdust(3));
+        SawManager.WOOD_SAW.addRecipe(wood.getLog(1), wood.getPlank(isHCLumber ? 4 : 5), wood.getSawdust(3));
         KilnManager.INSTANCE.addRecipe(wood.getLog(1), new ItemStack(Items.COAL, 2, 1));
         if (isHCLumber)
             addHCRecipe(new ChoppingRecipe(wood).setRegistryName(new ResourceLocation("debarkedlogs", woodType)));
