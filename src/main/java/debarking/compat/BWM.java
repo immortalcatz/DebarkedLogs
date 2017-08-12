@@ -8,6 +8,7 @@ import betterwithmods.common.registry.ChoppingRecipe;
 import betterwithmods.common.registry.blockmeta.managers.KilnManager;
 import betterwithmods.common.registry.blockmeta.managers.SawManager;
 import betterwithmods.module.ModuleLoader;
+import betterwithmods.module.hardcore.HCLumber;
 import debarking.DebarkRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -16,7 +17,7 @@ import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ResourceLocation;
 
 public class BWM {
-    private static boolean isHCLumber = ModuleLoader.isFeatureEnabled("betterwithmods.module.hardcore.HCLumber");
+    private static boolean isHCLumber = ModuleLoader.isFeatureEnabled(HCLumber.class);
 
     public static void preInit() {
 
@@ -37,7 +38,7 @@ public class BWM {
         SawManager.WOOD_SAW.addRecipe(wood.getLog(1), wood.getPlank(isHCLumber ? 4 : 5), wood.getSawdust(3));
         KilnManager.INSTANCE.addRecipe(wood.getLog(1), new ItemStack(Items.COAL, 2, 1));
         if (isHCLumber)
-            addHCRecipe(new ChoppingRecipe(wood).setRegistryName(new ResourceLocation("debarkedlogs", woodType)));
+            addHCRecipe(new ChoppingRecipe(wood, Math.max(HCLumber.axePlankAmount - 1, 1)).setRegistryName(new ResourceLocation("debarkedlogs", woodType)));
     }
 
     private static IRecipe addHCRecipe(IRecipe recipe) {
