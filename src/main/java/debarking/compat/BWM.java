@@ -8,7 +8,7 @@ import betterwithmods.common.registry.ChoppingRecipe;
 import betterwithmods.common.registry.blockmeta.managers.KilnManager;
 import betterwithmods.common.registry.blockmeta.managers.SawManager;
 import betterwithmods.module.ModuleLoader;
-import betterwithmods.module.hardcore.HCLumber;
+import betterwithmods.module.hardcore.crafting.HCLumber;
 import debarking.DebarkRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
